@@ -543,12 +543,13 @@ namespace Bingo
                 String[] colores =
                 {
                     "azul",
-                    "amarillo oscuro",
                     "cian",
                     "verde",
                     "rojo",
                     "amarillo",
-                    "magenta"
+                    "magenta",
+                    "cian oscuro",
+                    "verde oscuro"
                 };
 
                 Console.WriteLine("Números registrados:\n");
@@ -1102,6 +1103,7 @@ namespace Bingo
 
             return carton;
         }
+        
         public static void RestablecerValoresPorDefecto()
         {
             cartonUno = EstablecerValoresPorDefecto(cartonUno);
@@ -1134,7 +1136,7 @@ namespace Bingo
         {
             for (int i = 0; i < numerosCantados.Length; i++)
             {
-                Console.Write($"\n{i + 1}. Número cantado: ");
+                Console.Write("\n" + (i + 1) ". Número cantado: ");
                 numerosCantados[i] = Convert.ToInt32(Console.ReadLine());
             }
 
