@@ -1006,12 +1006,13 @@ namespace Bingo
                 String[] colores =
                 {
                     "azul",
-                    "amarillo oscuro",
                     "cian",
                     "verde",
                     "rojo",
                     "amarillo",
-                    "magenta"
+                    "magenta",
+                    "cian oscuro",
+                    "verde oscuro"
                 };
 
                 Int32 colorAleatorio = ObtenerNumeroAleatorio(0, colores.Length - 1);
@@ -1046,7 +1047,7 @@ namespace Bingo
 
                     Console.WriteLine("\n");
                 }
-;
+                
                 Colores.EstablecerColorTexto("default");
                 Console.WriteLine("");
             }
@@ -1102,6 +1103,7 @@ namespace Bingo
 
             return carton;
         }
+        
         public static void RestablecerValoresPorDefecto()
         {
             cartonUno = EstablecerValoresPorDefecto(cartonUno);
